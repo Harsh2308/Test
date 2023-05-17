@@ -1,0 +1,30 @@
+name: Development CI 
+
+on:
+  push:
+    branches: [ development ]
+
+jobs:
+  build:
+
+    runs-on: [self-hosted, development]
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: export NODE_OPTIONS="--max_old_space_size=4096"
+    - run: npm i
+    - run: rm package-lock.json
+    - run: cp .env.example.development .env
+    - run: rm -rf build
+    - name: build project
+      run: CI=false npm run build
+    - name: Copy the project to development directory
+      run: cp -R -f /home/luxuri/actions-runner/_work/Luxuri/Luxuri/build/* /var/www/html/

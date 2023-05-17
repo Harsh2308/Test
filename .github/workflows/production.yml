@@ -1,0 +1,27 @@
+name: Production CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    
+    runs-on: [self-hosted, production]
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm i
+    - run: cp .env.example.production .env
+    - name: build project
+      run: CI=false npm run build
+    - name: Copy the project to production directory
+      run: cp -R -f /home/luxuri/actions-runner/_work/Luxuri/Luxuri/build/* /var/www/html/
