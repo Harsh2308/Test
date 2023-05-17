@@ -1,0 +1,51 @@
+{
+  "conciergedata": [
+    {
+      "id": "1",
+      "heading": "Massage Therapist",
+      "image": "images/conciergeimages/top-slide1.png",
+      "para": "Deep tissue massage, stretch therapy, hot stone massage, massage cupping, and cranial release technique are some of the methods that our licensed massage therapists use to help you relieve pain, rehabilitate injuries, reduce stress, and increase overall relaxation."
+    },
+    {
+      "id": "2",
+      "heading": "VIP Protection Service",
+      "image": "images/conciergeimages/top-slide2.png",
+      "para": "The highest level of trained protection officers can be arranged during your stay with us. Our security personnel have worked with political figures, celebrities, and high profile individuals."
+    },
+    {
+      "id": "3",
+      "heading": "Private Chef",
+      "image": "images/conciergeimages/top-slide3.png",
+      "para": "A private in-villa Chef is available to prepare a variety of healthy meals and personalized menus for our guests on a full-time basis or for a once off special occasion. Our Chef will arrive at your luxury villa to prepare, cook, and serve your food at the event or for later consumption."
+    },
+    {
+      "id": "4",
+      "heading": "Event/Restaurant Reservations",
+      "image": "images/conciergeimages/top-slide3.png",
+      "para": "Our concierge service recommends and provides access to tickets for exclusive events, exhibitions and festivals as well as fine dining reservations."
+    },
+    {
+      "id": "5",
+      "heading": "Private Travel & Luxury Tours",
+      "image": "images/conciergeimages/top-slide4.png",
+      "para": "All manner of private travel and tours both locally and abroad can be arranged prior to your arrival or during your stay. Luxury tours and outdoor adventures can be an intricate part of your visit to Miami and the Keys. We offer trips to private game hunting and Bahamas island packages. Our professional concierges will take care of your every requirement."
+    }
+  ],
+  "formsliderimages": [
+    {
+      "image": "images/conciergeimages/formslide1.png"
+    },
+    {
+      "image": "images/conciergeimages/formslide2.png"
+    },
+    {
+      "image": "images/conciergeimages/formslide3.png"
+    },
+    {
+      "image": "images/conciergeimages/formslide4.png"
+    },
+    {
+      "image": "images/conciergeimages/formslide5.png"
+    }
+  ]
+}

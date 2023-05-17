@@ -1,0 +1,36 @@
+{
+    "carddata": [
+        {
+            "id": "1",
+            "image": "images/about-image2.png",
+            "designation": "The CEO",
+            "name": "Larry Shinbaum",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ipsum auctor risus et quis integer cursus.",
+            "desigtitle": "CEO"
+        },
+        {
+            "id": "2",
+            "image": "images/about-image1.png",
+            "designation": "The Analyst",
+            "name": "Elizabeth Bender",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ipsum auctor risus et quis integer cursus.",
+            "desigtitle": "Analyst"
+        },
+        {
+            "id": "3",
+            "image": "images/about-image2.png",
+            "designation": "The CEO",
+            "name": "Larry Shinbaum",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ipsum auctor risus et quis integer cursus.",
+            "desigtitle": "CEO"
+        },
+        {
+            "id": "4",
+            "image": "images/about-image1.png",
+            "designation": "The Analyst",
+            "name": "Elizabeth Bender",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ipsum auctor risus et quis integer cursus.",
+            "desigtitle": "Analyst"
+        }
+    ]
+}

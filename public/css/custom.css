@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #c3c3c3;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(17, 17, 17);
+}
+
+::-webkit-slider-thumb:hover {
+    background: #afafaf;
+}
+
+/* Denish Font */
+@font-face {
+    font-weight: 400;
+    font-family: 'Denish';
+    src: url(../fonts/Denish/WebFontKit/Denish-Light.woff);
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Denish';
+    src: url(../fonts/Denish/WebFontKit/Denish-Regular.woff);
+}
+
+@font-face {
+    font-weight: 600;
+    font-family: 'Denish';
+    src: url(../fonts/Denish/WebFontKit/Denish-Medium.woff);
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Denish';
+    src: url(../fonts/Denish/WebFontKit/Denish-Bold.woff);
+}
+
+/* SF PRO Font */
+@font-face {
+    font-weight: 200;
+    font-family: 'SF Pro Text';
+    src: url(../fonts/SF-Pro-Text-Font-Family/Thin.ttf);
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'SF Pro Text';
+    src: url(../fonts/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf);
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: 'SF Pro Text';
+    src: url(../fonts/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'SF Pro Text';
+    src: url(../fonts/SF-Pro-Text-Font-Family/SF-Pro-Text-Medium.otf);
+}
+
+/* Avenir */
+@font-face {
+    font-weight: 400;
+    font-family: 'Avenir';
+    src: url(../fonts/Avenir/Avenir-Light.woff);
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Avenir';
+    src: url(../fonts/Avenir/Avenir-Medium.woff);
+}
+
+@font-face {
+    font-weight: 800;
+    font-family: 'Avenir';
+    src: url(../fonts/Avenir/Avenir-Heavy.woff);
+}
+
+.offCanvasnav {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.ReactModal__Overlay {
+    z-index: 10;
+}
+
+.container-xl {
+    max-width: 1440px !important;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: white !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.ant-select-dropdown.ant-select-dropdown-placement-bottomLeft,
+.ant-select-dropdown.ant-select-dropdown-placement-topLeft {
+    background: #1E1E1E !important;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    color: #FFFFFF;
+    background: #1E1E1E !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    color: #FFFFFF;
+    background: #1E1E1E !important;
+}
+
+.ant-select-item-option-content {
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    font-family: 'Avenir';
+}
+
+.rc-virtual-list-holder-inner {
+    gap: 8px;
+}
+
+.rc-virtual-list-holder-inner, .ant-select-item.ant-select-item-option, .ant-select-item-option-content {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rc-virtual-list-holder-inner, .ant-select-item.ant-select-item-option:last-child, .ant-select-item-option-content {
+    padding-bottom: 0px;
+    border-bottom: none;
+    display: block !important;
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: rgb(252, 245, 245);
+    }
+
+    100% {
+        border-color: rgb(165, 159, 159);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .empty-field {
+        margin-top: clamp(36px, 8vh, 104px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ReactModal__Content.ReactModal__Content--after-open {
+        padding: 20px 0 !important;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .ReactModal__Content.ReactModal__Content--after-open {
+        padding: 0px 0px 20px 0 !important;
+    }
+}

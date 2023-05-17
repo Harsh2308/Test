@@ -1,17 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>React App</title>
-</head>
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-</body>
+	<head>
+		<base href="%PUBLIC_URL%/">
+		<!-- No crawler -->
+		<!-- <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex"> -->
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" type="image/x-icon"
+			href="https://images.squarespace-cdn.com/content/v1/5eee946aa384c5543daf3596/1614830772589-V9TUZ9UWQVEI2W1CWMTV/favicon.ico?format=100w"
+			/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<link rel="apple-touch-icon"
+			href="https://images.squarespace-cdn.com/content/v1/5eee946aa384c5543daf3596/1614830772589-V9TUZ9UWQVEI2W1CWMTV/favicon.ico?format=192w"
+			/>
+		<!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css"
+			type="text/css">
+
+		<!-- Custom CSS -->
+		<link href="%PUBLIC_URL%/css/react-datepicker.css" rel="stylesheet">
+		<link href="%PUBLIC_URL%/css/custom.css" rel="stylesheet">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+		<!-- Custom Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet">
+		<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+		<!--Tag For Google Analytic-->
+		<!-- Global site tag (gtag.js) - Google Analytics // Local -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-225640683-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-225640683-1');
+	</script> -->
+		<!-- Global site tag (gtag.js) - Google Analytics // Live -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168800915-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-168800915-1');
+	</script> -->
+		<!-- Meta Pixel Code -->
+		<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '316420765676868');
+		fbq('track', 'PageView');
+	</script>
+		<noscript><img height="1" width="1" style="display:none"
+				src="https://www.facebook.com/tr?id=316420765676868&ev=PageView&noscript=1"
+				/></noscript>
+		<!-- End Meta Pixel Code -->
+	</head>
+
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+
+		<!-- GetResponse Analytics -->
+		<script type="text/javascript">
+
+		(function (m, o, n, t, e, r, _) {
+			m['__GetResponseAnalyticsObject'] = e; m[e] = m[e] || function () { (m[e].q = m[e].q || []).push(arguments) };
+			r = o.createElement(n); _ = o.getElementsByTagName(n)[0]; r.async = 1; r.src = t; r.setAttribute('crossorigin', 'use-credentials'); _.parentNode.insertBefore(r, _);
+		})(window, document, 'script', 'https://ga.getresponse.com/script/7e99318c-59b7-4ab3-91a5-d807320f11cb/ga.js', 'GrTracking');
+
+	</script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+			type="text/javascript"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"
+			type="text/javascript"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"
+			type="text/javascript"></script>
+
+		<script type="text/javascript">
+		
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		Tawk_API.customStyle = {
+		visibility : {
+			desktop : {
+				position : 'br',
+				xOffset : '10px',
+				yOffset : 20
+			},
+			mobile : {
+				position : 'br',
+				xOffset : 10,
+				yOffset : 110
+			},
+			bubble : {
+				rotate : '0deg',
+			 	xOffset : -20,
+			 	yOffset : 0
+			}
+		}
+	};
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5cacf949557d5f68515bc286/1ee6v1l0o';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+		<!-- <script type="text/javascript">
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 1939064, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script> -->
+		<script type="text/javascript"
+			src="//cdn.callrail.com/companies/944359220/63f3292afdcfbf23c9fd/12/swap.js"></script>
+	</body>
+
 </html>
