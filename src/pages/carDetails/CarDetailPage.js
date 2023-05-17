@@ -61,14 +61,9 @@ const Index = () => {
       .catch((error) => console.log(error))
   }, [id, brokerId, employeeId])
   console.log(carDetails)
-  const seoParametes = {
-    name: carDetails?.friendlyName,
-    description: carDetails?.description,
-    image: carDetails?.imageFilePath
-  }
   return (
     <CarDetailPage>
-      {carDetails && <SeoHead seo={seoParametes} />}
+
       {inquiryModalOpen ? (
         <InquiryModal
           size="48"

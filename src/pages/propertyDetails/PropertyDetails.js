@@ -221,10 +221,10 @@ const Index = () => {
   }, [propertyDetailsById?.propertyID,propertyDetailsById?.locationID]);
 
   const seoParametes = {
-    name: propertyDetailsById?.propertyFriendlyName,
-    description: propertyDetailsById?.description,
-    image: propertyDetailsById?.imageFilePath,
-    link: window.location.href
+    name: "Property",
+    description: "description",
+    image: "",
+    link: ""
   }
   return (
     <PropertyDetailsContainer>

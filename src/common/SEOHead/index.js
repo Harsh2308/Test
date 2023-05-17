@@ -4,18 +4,9 @@ import { Helmet } from "react-helmet";
 const SeoHead = ({ seo }) =>
 {
 
-  let title =
-    seo.name !== undefined
-      ? seo.name
-      : "LUXURI";
-  let image =
-    seo.image !== undefined
-      ? seo.image
-      : "";
-  let description =
-    seo.description !== undefined
-      ? seo.description
-      : "luxuri";
+  let title = seo.name
+  let image = seo.image
+  let description = seo.description
   return (
     <>
       <Helmet>

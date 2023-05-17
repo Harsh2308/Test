@@ -30,15 +30,8 @@ const Index = () => {
             .then((res) => setYachtDetails(res.data.Data))
             .catch((err) => console.log(err))
     }, [id, brokerId, employeeId])
-
-    const seoParametes = {
-        name: yachtDetails?.friendlyName,
-        description: yachtDetails?.description,
-        image: yachtDetails?.imageFilePath
-      }
     return (
         <YachtDetailPage>
-            {yachtDetails && <SeoHead seo={seoParametes} />}
             {inquiryModalOpen ? (
                 <InquiryModal
                     size="48"
