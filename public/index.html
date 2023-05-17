@@ -38,12 +38,69 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet">
+		<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+		<!--Tag For Google Analytic-->
+		<!-- Global site tag (gtag.js) - Google Analytics // Local -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-225640683-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'UA-225640683-1');
+	</script> -->
+		<!-- Global site tag (gtag.js) - Google Analytics // Live -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168800915-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-168800915-1');
+	</script> -->
+		<!-- Meta Pixel Code -->
+		<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '316420765676868');
+		fbq('track', 'PageView');
+	</script>
+		<noscript><img height="1" width="1" style="display:none"
+				src="https://www.facebook.com/tr?id=316420765676868&ev=PageView&noscript=1"
+				/></noscript>
+		<!-- End Meta Pixel Code -->
 	</head>
+
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
+
+		<!-- GetResponse Analytics -->
+		<script type="text/javascript">
+
+		(function (m, o, n, t, e, r, _) {
+			m['__GetResponseAnalyticsObject'] = e; m[e] = m[e] || function () { (m[e].q = m[e].q || []).push(arguments) };
+			r = o.createElement(n); _ = o.getElementsByTagName(n)[0]; r.async = 1; r.src = t; r.setAttribute('crossorigin', 'use-credentials'); _.parentNode.insertBefore(r, _);
+		})(window, document, 'script', 'https://ga.getresponse.com/script/7e99318c-59b7-4ab3-91a5-d807320f11cb/ga.js', 'GrTracking');
+
+	</script>
 	</body>
 
 </html>
