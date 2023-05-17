@@ -31,10 +31,14 @@ const Index = () => {
       .catch((err) => toast('Some thing went wrong'))
   };
 
+  const data = {
+    site: "contact"
+  }
+
   return (
     <ContactUsPage>
       <Helmet>
-          <title>contact</title>
+          <title>{data.site}</title>
       </Helmet>
       <div className='contactus_bg'>
         <div className='contactus_bg_container'>
