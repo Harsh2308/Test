@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM, { hydrate } from 'react-dom';
+import  { hydrate, render } from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { render } from '@testing-library/react';
 
 
 const MyApp = () => (
