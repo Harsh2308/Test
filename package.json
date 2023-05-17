@@ -63,6 +63,15 @@
         "--disable-setuid-sandbox"
       ]
     },
+    "jest": {
+      "preset": "react-native",
+      "transformIgnorePatterns": [
+        "node_modules/(?!(jest-)?react-native|react-redux|react-navigation-redux-helpers)"
+      ],
+      "transform": {
+        "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+      }
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
