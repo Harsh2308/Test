@@ -7,7 +7,7 @@ import YachtMbSlider from './YachtMbSlider';
 import InquiryModal from 'common/inquiryModal';
 import { useLocation } from 'react-router-dom';
 import { YachtDetailPage, InquiryMobBox } from './style';
-import SeoHead from 'common/SEOHead';
+
 
 const Index = () => {
     const location = useLocation()

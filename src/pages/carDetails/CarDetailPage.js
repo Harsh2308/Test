@@ -8,7 +8,6 @@ import { CarDetailPage } from './style.js';
 import { InquiryMobBox } from "./style.js";
 import InquiryModal from 'common/inquiryModal';
 import { useLocation } from 'react-router-dom';
-import SeoHead from 'common/SEOHead';
 
 const engineTypes = {
   "1": "6.5L V12",

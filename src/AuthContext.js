@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from "react";
 import { getEmplyeeId } from './authApi';
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
-import SeoHead from "common/SEOHead";
+import { Helmet } from "react-helmet";
 
 export const AuthContext = createContext();
 // This context provider is passed to any component requiring the context
@@ -72,10 +72,9 @@ export const AuthProvider = ({ children }) => {
         setEmployeeId
       }}
     >
-      <SeoHead seo={{
-         name: "Luxuri",
-         description: "LUXURI",
-      }} />
+      <Helmet>
+        <title>Hello</title>
+      </Helmet>
       {isLoading ? (
         <div style={{
           width: '100vw', 

@@ -22,7 +22,7 @@ import {
   GoogleMap,
   Circle,
 } from "react-google-maps";
-import SeoHead from "common/SEOHead";
+import { Helmet } from "react-helmet";
 
 const Index = () => {
   const { name } = useParams();
@@ -228,7 +228,9 @@ const Index = () => {
   }
   return (
     <PropertyDetailsContainer>
-      {propertyDetailsById && <SeoHead seo={seoParametes} />}
+      <Helmet>
+          <title>property</title>
+      </Helmet>
       {inquiryModalOpen ? (
         <InquiryModal
           size="48"
