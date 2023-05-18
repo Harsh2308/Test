@@ -24,6 +24,8 @@
     "history": "^5.0.1",
     "leaflet": "^1.9.3",
     "moment": "^2.29.1",
+    "patch-package": "^7.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "query-string": "^7.1.1",
     "rc-slider": "^9.7.2",
     "react": "^17.0.2",
@@ -52,26 +54,27 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=$(grep PUBLIC_URL .env | cut -d '=' -f2) react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "postinstall": "patch-package"
   },
-    "reactSnap": {
-      "puppeteerArgs": [
-        "--no-sandbox",
-        "--disable-setuid-sandbox"
-      ]
-    },
-    "jest": {
-      "preset": "react-native",
-      "transformIgnorePatterns": [
-        "node_modules/(?!(jest-)?react-native|react-redux|react-navigation-redux-helpers)"
-      ],
-      "transform": {
-        "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-      }
-    },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-redux|react-navigation-redux-helpers)"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

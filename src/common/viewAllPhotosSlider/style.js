@@ -24,7 +24,7 @@ export const ViewAllPhotosContainer = styled.div`
             position: relative;
             img {
                 object-fit: cover;
-                aspect-ratio: 20 / 9;
+                aspect-ratio: 21.5/9;
                 object-position: center bottom;
                 height: initial;
                 width: 100%;
@@ -111,17 +111,13 @@ export const ViewAllPhotosContainer = styled.div`
             .image {
               width: 100%;
               cursor: pointer;
-              // aspect-ratio: 2/1;
               margin-bottom: 0px;
 
               img {
                 width: 100%;
                 object-fit: cover;
-                aspect-ratio: 20/9;
+                aspect-ratio: 21.5/9;
                 object-position: bottom;
-                @media screen and (max-height: 750px) {
-                  aspect-ratio: 40.5/11;
-                }
               }
             }
 

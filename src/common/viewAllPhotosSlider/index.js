@@ -125,8 +125,8 @@ const Index = ({ showCaseImage, bedroomTitle }) =>
           <Swiper
             ref={childRef}
             navigation={true}
-            slidesPerView={4}
-            slidesPerGroup={4}
+            slidesPerView={5}
+            slidesPerGroup={5}
             spaceBetween= {20}
             modules={[Navigation, Thumbs]}
             className='mySwiper'

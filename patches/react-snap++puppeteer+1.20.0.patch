@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-snap/node_modules/puppeteer/lib/Launcher.js b/node_modules/react-snap/node_modules/puppeteer/lib/Launcher.js
+index c5060f7..64f3e91 100644
+--- a/node_modules/react-snap/node_modules/puppeteer/lib/Launcher.js
++++ b/node_modules/react-snap/node_modules/puppeteer/lib/Launcher.js
+@@ -92,7 +92,7 @@ class Launcher {
+       ignoreHTTPSErrors = false,
+       defaultViewport = {width: 800, height: 600},
+       slowMo = 0,
+-      timeout = 30000
++      timeout = 3000000
+     } = options;
+ 
+     const chromeArguments = [];

@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
       }}
     >
       <Helmet>
-        <title>Hello</title>
+        <title>Luxuri</title>
       </Helmet>
       {isLoading ? (
         <div style={{

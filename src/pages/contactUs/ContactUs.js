@@ -6,7 +6,6 @@ import { toast } from "react-toastify";
 import { fetchFunction } from './apis';
 import { ContactUsPage } from "./style";
 import FormControl from "common/formControl";
-import { Helmet } from "react-helmet";
 
 const Index = () => {
   const brokerId = localStorage.getItem('brokerId')
@@ -31,15 +30,8 @@ const Index = () => {
       .catch((err) => toast('Some thing went wrong'))
   };
 
-  const data = {
-    site: "contact"
-  }
-
   return (
     <ContactUsPage>
-      <Helmet>
-          <title>{data.site}</title>
-      </Helmet>
       <div className='contactus_bg'>
         <div className='contactus_bg_container'>
           <div className='contactus_bg_container_leftside'>
